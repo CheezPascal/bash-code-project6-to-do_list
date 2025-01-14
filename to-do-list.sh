@@ -5,11 +5,14 @@
 todo_file="todo.txt"
 
 while true; do
-    echo "To-Do List Manager"
-    echo "1. Add Task"
-    echo "2. View Tasks"
-    echo "3. Remove Task"
-    echo "4. Exit"
+    echo
+    echo "$(printf '#%.0s' {1..23})"
+    echo "To-Do List Manager    #"
+    echo "1. Add Task           #"
+    echo "2. View Tasks         #"
+    echo "3. Remove Task        #"
+    echo "4. Exit               #"
+    echo "$(printf '#%.0s' {1..23})"
     read -p "Choose an option [1-4]: " choice
 
     case $choice in
